@@ -1,0 +1,2767 @@
+{
+  "features": [
+    "Temparature",
+    "Humidity",
+    "Moisture",
+    "Soil Type",
+    "Nitrogen",
+    "Potassium",
+    "Phosphorous"
+  ],
+  "soilMapping": {
+    "Sandy": 0,
+    "Loamy": 1,
+    "Black": 2,
+    "Red": 3,
+    "Clayey": 4
+  },
+  "tree": {
+    "isLeaf": false,
+    "feature": "Moisture",
+    "threshold": 48.27499961853027,
+    "left": {
+      "isLeaf": false,
+      "feature": "Potassium",
+      "threshold": 0.5,
+      "left": {
+        "isLeaf": false,
+        "feature": "Moisture",
+        "threshold": 46.78499984741211,
+        "left": {
+          "isLeaf": false,
+          "feature": "Soil Type",
+          "threshold": 3.5,
+          "left": {
+            "isLeaf": false,
+            "feature": "Humidity",
+            "threshold": 55.5049991607666,
+            "left": {
+              "isLeaf": false,
+              "feature": "Moisture",
+              "threshold": 25.704999923706055,
+              "left": {
+                "isLeaf": false,
+                "feature": "Phosphorous",
+                "threshold": 3.5,
+                "left": {
+                  "isLeaf": false,
+                  "feature": "Soil Type",
+                  "threshold": 1.5,
+                  "left": {
+                    "isLeaf": false,
+                    "feature": "Temparature",
+                    "threshold": 28.5649995803833,
+                    "left": {
+                      "isLeaf": false,
+                      "feature": "Moisture",
+                      "threshold": 24.280000686645508,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Sugarcane"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Ground Nuts"
+                      }
+                    },
+                    "right": {
+                      "isLeaf": true,
+                      "prediction": "Oil seeds"
+                    }
+                  },
+                  "right": {
+                    "isLeaf": false,
+                    "feature": "Moisture",
+                    "threshold": 24.65999984741211,
+                    "left": {
+                      "isLeaf": false,
+                      "feature": "Humidity",
+                      "threshold": 49.4950008392334,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Oil seeds"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Pulses"
+                      }
+                    },
+                    "right": {
+                      "isLeaf": true,
+                      "prediction": "Oil seeds"
+                    }
+                  }
+                },
+                "right": {
+                  "isLeaf": false,
+                  "feature": "Temparature",
+                  "threshold": 34.665000915527344,
+                  "left": {
+                    "isLeaf": false,
+                    "feature": "Temparature",
+                    "threshold": 29.255000114440918,
+                    "left": {
+                      "isLeaf": false,
+                      "feature": "Humidity",
+                      "threshold": 52.20500183105469,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Millets"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Tobacco"
+                      }
+                    },
+                    "right": {
+                      "isLeaf": false,
+                      "feature": "Humidity",
+                      "threshold": 54.96500015258789,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Millets"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Cotton"
+                      }
+                    }
+                  },
+                  "right": {
+                    "isLeaf": true,
+                    "prediction": "Oil seeds"
+                  }
+                }
+              },
+              "right": {
+                "isLeaf": false,
+                "feature": "Temparature",
+                "threshold": 27.894999504089355,
+                "left": {
+                  "isLeaf": false,
+                  "feature": "Moisture",
+                  "threshold": 27.614999771118164,
+                  "left": {
+                    "isLeaf": false,
+                    "feature": "Phosphorous",
+                    "threshold": 37.5,
+                    "left": {
+                      "isLeaf": false,
+                      "feature": "Humidity",
+                      "threshold": 46.86000061035156,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Tobacco"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Cotton"
+                      }
+                    },
+                    "right": {
+                      "isLeaf": false,
+                      "feature": "Nitrogen",
+                      "threshold": 10.5,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Wheat"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Millets"
+                      }
+                    }
+                  },
+                  "right": {
+                    "isLeaf": false,
+                    "feature": "Humidity",
+                    "threshold": 53.02499961853027,
+                    "left": {
+                      "isLeaf": false,
+                      "feature": "Moisture",
+                      "threshold": 38.954999923706055,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Maize"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Paddy"
+                      }
+                    },
+                    "right": {
+                      "isLeaf": false,
+                      "feature": "Temparature",
+                      "threshold": 27.729999542236328,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Sugarcane"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Tobacco"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "isLeaf": false,
+                  "feature": "Phosphorous",
+                  "threshold": 33.5,
+                  "left": {
+                    "isLeaf": false,
+                    "feature": "Moisture",
+                    "threshold": 34.59499931335449,
+                    "left": {
+                      "isLeaf": false,
+                      "feature": "Humidity",
+                      "threshold": 55.32500076293945,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Ground Nuts"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Millets"
+                      }
+                    },
+                    "right": {
+                      "isLeaf": false,
+                      "feature": "Moisture",
+                      "threshold": 37.28000068664551,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Millets"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Millets"
+                      }
+                    }
+                  },
+                  "right": {
+                    "isLeaf": false,
+                    "feature": "Temparature",
+                    "threshold": 30.03499984741211,
+                    "left": {
+                      "isLeaf": false,
+                      "feature": "Humidity",
+                      "threshold": 52.010000228881836,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Barley"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Wheat"
+                      }
+                    },
+                    "right": {
+                      "isLeaf": false,
+                      "feature": "Humidity",
+                      "threshold": 45.77000045776367,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Pulses"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Cotton"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "right": {
+              "isLeaf": false,
+              "feature": "Nitrogen",
+              "threshold": 14.5,
+              "left": {
+                "isLeaf": false,
+                "feature": "Temparature",
+                "threshold": 35.60000038146973,
+                "left": {
+                  "isLeaf": false,
+                  "feature": "Temparature",
+                  "threshold": 35.220001220703125,
+                  "left": {
+                    "isLeaf": false,
+                    "feature": "Moisture",
+                    "threshold": 31.610000610351562,
+                    "left": {
+                      "isLeaf": false,
+                      "feature": "Phosphorous",
+                      "threshold": 33.0,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Maize"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Ground Nuts"
+                      }
+                    },
+                    "right": {
+                      "isLeaf": false,
+                      "feature": "Temparature",
+                      "threshold": 23.844999313354492,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Pulses"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Barley"
+                      }
+                    }
+                  },
+                  "right": {
+                    "isLeaf": false,
+                    "feature": "Moisture",
+                    "threshold": 39.19000053405762,
+                    "left": {
+                      "isLeaf": false,
+                      "feature": "Nitrogen",
+                      "threshold": 9.5,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Pulses"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Tobacco"
+                      }
+                    },
+                    "right": {
+                      "isLeaf": true,
+                      "prediction": "Tobacco"
+                    }
+                  }
+                },
+                "right": {
+                  "isLeaf": false,
+                  "feature": "Temparature",
+                  "threshold": 38.545000076293945,
+                  "left": {
+                    "isLeaf": false,
+                    "feature": "Phosphorous",
+                    "threshold": 35.5,
+                    "left": {
+                      "isLeaf": false,
+                      "feature": "Phosphorous",
+                      "threshold": 12.0,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Maize"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Oil seeds"
+                      }
+                    },
+                    "right": {
+                      "isLeaf": false,
+                      "feature": "Nitrogen",
+                      "threshold": 10.5,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Paddy"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Oil seeds"
+                      }
+                    }
+                  },
+                  "right": {
+                    "isLeaf": false,
+                    "feature": "Temparature",
+                    "threshold": 38.77499961853027,
+                    "left": {
+                      "isLeaf": false,
+                      "feature": "Soil Type",
+                      "threshold": 1.5,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Tobacco"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Pulses"
+                      }
+                    },
+                    "right": {
+                      "isLeaf": false,
+                      "feature": "Soil Type",
+                      "threshold": 2.5,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Cotton"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Ground Nuts"
+                      }
+                    }
+                  }
+                }
+              },
+              "right": {
+                "isLeaf": false,
+                "feature": "Humidity",
+                "threshold": 67.21500015258789,
+                "left": {
+                  "isLeaf": false,
+                  "feature": "Humidity",
+                  "threshold": 66.97999954223633,
+                  "left": {
+                    "isLeaf": false,
+                    "feature": "Moisture",
+                    "threshold": 20.940000534057617,
+                    "left": {
+                      "isLeaf": false,
+                      "feature": "Humidity",
+                      "threshold": 57.040000915527344,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Maize"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Sugarcane"
+                      }
+                    },
+                    "right": {
+                      "isLeaf": false,
+                      "feature": "Moisture",
+                      "threshold": 22.78499984741211,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Millets"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Sugarcane"
+                      }
+                    }
+                  },
+                  "right": {
+                    "isLeaf": false,
+                    "feature": "Humidity",
+                    "threshold": 67.20499801635742,
+                    "left": {
+                      "isLeaf": false,
+                      "feature": "Soil Type",
+                      "threshold": 2.5,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Paddy"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Barley"
+                      }
+                    },
+                    "right": {
+                      "isLeaf": true,
+                      "prediction": "Millets"
+                    }
+                  }
+                },
+                "right": {
+                  "isLeaf": false,
+                  "feature": "Humidity",
+                  "threshold": 67.89999771118164,
+                  "left": {
+                    "isLeaf": false,
+                    "feature": "Phosphorous",
+                    "threshold": 17.5,
+                    "left": {
+                      "isLeaf": false,
+                      "feature": "Moisture",
+                      "threshold": 43.70000076293945,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Tobacco"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Barley"
+                      }
+                    },
+                    "right": {
+                      "isLeaf": false,
+                      "feature": "Nitrogen",
+                      "threshold": 22.5,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Ground Nuts"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Sugarcane"
+                      }
+                    }
+                  },
+                  "right": {
+                    "isLeaf": false,
+                    "feature": "Temparature",
+                    "threshold": 26.22499942779541,
+                    "left": {
+                      "isLeaf": true,
+                      "prediction": "Oil seeds"
+                    },
+                    "right": {
+                      "isLeaf": false,
+                      "feature": "Humidity",
+                      "threshold": 70.75,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Ground Nuts"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Tobacco"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "right": {
+            "isLeaf": false,
+            "feature": "Temparature",
+            "threshold": 22.054999351501465,
+            "left": {
+              "isLeaf": false,
+              "feature": "Nitrogen",
+              "threshold": 11.5,
+              "left": {
+                "isLeaf": true,
+                "prediction": "Barley"
+              },
+              "right": {
+                "isLeaf": false,
+                "feature": "Moisture",
+                "threshold": 36.954999923706055,
+                "left": {
+                  "isLeaf": true,
+                  "prediction": "Ground Nuts"
+                },
+                "right": {
+                  "isLeaf": false,
+                  "feature": "Phosphorous",
+                  "threshold": 22.0,
+                  "left": {
+                    "isLeaf": true,
+                    "prediction": "Tobacco"
+                  },
+                  "right": {
+                    "isLeaf": true,
+                    "prediction": "Ground Nuts"
+                  }
+                }
+              }
+            },
+            "right": {
+              "isLeaf": false,
+              "feature": "Humidity",
+              "threshold": 44.77000045776367,
+              "left": {
+                "isLeaf": false,
+                "feature": "Humidity",
+                "threshold": 42.875,
+                "left": {
+                  "isLeaf": true,
+                  "prediction": "Tobacco"
+                },
+                "right": {
+                  "isLeaf": false,
+                  "feature": "Moisture",
+                  "threshold": 39.27499961853027,
+                  "left": {
+                    "isLeaf": false,
+                    "feature": "Temparature",
+                    "threshold": 23.005000114440918,
+                    "left": {
+                      "isLeaf": true,
+                      "prediction": "Barley"
+                    },
+                    "right": {
+                      "isLeaf": true,
+                      "prediction": "Pulses"
+                    }
+                  },
+                  "right": {
+                    "isLeaf": false,
+                    "feature": "Temparature",
+                    "threshold": 26.889999389648438,
+                    "left": {
+                      "isLeaf": true,
+                      "prediction": "Paddy"
+                    },
+                    "right": {
+                      "isLeaf": true,
+                      "prediction": "Ground Nuts"
+                    }
+                  }
+                }
+              },
+              "right": {
+                "isLeaf": false,
+                "feature": "Humidity",
+                "threshold": 78.79499816894531,
+                "left": {
+                  "isLeaf": false,
+                  "feature": "Humidity",
+                  "threshold": 73.68999862670898,
+                  "left": {
+                    "isLeaf": false,
+                    "feature": "Nitrogen",
+                    "threshold": 39.5,
+                    "left": {
+                      "isLeaf": false,
+                      "feature": "Nitrogen",
+                      "threshold": 22.5,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Paddy"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Maize"
+                      }
+                    },
+                    "right": {
+                      "isLeaf": false,
+                      "feature": "Phosphorous",
+                      "threshold": 3.5,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Millets"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Barley"
+                      }
+                    }
+                  },
+                  "right": {
+                    "isLeaf": false,
+                    "feature": "Humidity",
+                    "threshold": 77.07000350952148,
+                    "left": {
+                      "isLeaf": false,
+                      "feature": "Moisture",
+                      "threshold": 41.52000045776367,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Ground Nuts"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Paddy"
+                      }
+                    },
+                    "right": {
+                      "isLeaf": false,
+                      "feature": "Moisture",
+                      "threshold": 29.859999656677246,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Pulses"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Paddy"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "isLeaf": true,
+                  "prediction": "Millets"
+                }
+              }
+            }
+          }
+        },
+        "right": {
+          "isLeaf": false,
+          "feature": "Humidity",
+          "threshold": 55.625,
+          "left": {
+            "isLeaf": false,
+            "feature": "Temparature",
+            "threshold": 33.685001373291016,
+            "left": {
+              "isLeaf": false,
+              "feature": "Phosphorous",
+              "threshold": 23.5,
+              "left": {
+                "isLeaf": false,
+                "feature": "Nitrogen",
+                "threshold": 10.0,
+                "left": {
+                  "isLeaf": false,
+                  "feature": "Temparature",
+                  "threshold": 27.815000534057617,
+                  "left": {
+                    "isLeaf": true,
+                    "prediction": "Cotton"
+                  },
+                  "right": {
+                    "isLeaf": false,
+                    "feature": "Nitrogen",
+                    "threshold": 8.0,
+                    "left": {
+                      "isLeaf": false,
+                      "feature": "Moisture",
+                      "threshold": 47.10000038146973,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Oil seeds"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Barley"
+                      }
+                    },
+                    "right": {
+                      "isLeaf": true,
+                      "prediction": "Maize"
+                    }
+                  }
+                },
+                "right": {
+                  "isLeaf": false,
+                  "feature": "Humidity",
+                  "threshold": 48.80999946594238,
+                  "left": {
+                    "isLeaf": false,
+                    "feature": "Phosphorous",
+                    "threshold": 15.0,
+                    "left": {
+                      "isLeaf": false,
+                      "feature": "Temparature",
+                      "threshold": 30.335000038146973,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Maize"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Millets"
+                      }
+                    },
+                    "right": {
+                      "isLeaf": false,
+                      "feature": "Temparature",
+                      "threshold": 24.4350004196167,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Sugarcane"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Paddy"
+                      }
+                    }
+                  },
+                  "right": {
+                    "isLeaf": false,
+                    "feature": "Temparature",
+                    "threshold": 26.3100004196167,
+                    "left": {
+                      "isLeaf": false,
+                      "feature": "Soil Type",
+                      "threshold": 2.5,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Wheat"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Millets"
+                      }
+                    },
+                    "right": {
+                      "isLeaf": false,
+                      "feature": "Temparature",
+                      "threshold": 33.45000076293945,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Millets"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Pulses"
+                      }
+                    }
+                  }
+                }
+              },
+              "right": {
+                "isLeaf": false,
+                "feature": "Moisture",
+                "threshold": 47.71500015258789,
+                "left": {
+                  "isLeaf": false,
+                  "feature": "Soil Type",
+                  "threshold": 0.5,
+                  "left": {
+                    "isLeaf": true,
+                    "prediction": "Tobacco"
+                  },
+                  "right": {
+                    "isLeaf": false,
+                    "feature": "Soil Type",
+                    "threshold": 2.0,
+                    "left": {
+                      "isLeaf": true,
+                      "prediction": "Maize"
+                    },
+                    "right": {
+                      "isLeaf": true,
+                      "prediction": "Cotton"
+                    }
+                  }
+                },
+                "right": {
+                  "isLeaf": false,
+                  "feature": "Moisture",
+                  "threshold": 47.81500053405762,
+                  "left": {
+                    "isLeaf": true,
+                    "prediction": "Pulses"
+                  },
+                  "right": {
+                    "isLeaf": false,
+                    "feature": "Moisture",
+                    "threshold": 48.03499984741211,
+                    "left": {
+                      "isLeaf": false,
+                      "feature": "Moisture",
+                      "threshold": 47.864999771118164,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Ground Nuts"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Millets"
+                      }
+                    },
+                    "right": {
+                      "isLeaf": false,
+                      "feature": "Humidity",
+                      "threshold": 50.489999771118164,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Paddy"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Pulses"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "right": {
+              "isLeaf": false,
+              "feature": "Moisture",
+              "threshold": 47.45000076293945,
+              "left": {
+                "isLeaf": true,
+                "prediction": "Oil seeds"
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": "Sugarcane"
+              }
+            }
+          },
+          "right": {
+            "isLeaf": false,
+            "feature": "Temparature",
+            "threshold": 29.5049991607666,
+            "left": {
+              "isLeaf": false,
+              "feature": "Humidity",
+              "threshold": 68.91499710083008,
+              "left": {
+                "isLeaf": false,
+                "feature": "Temparature",
+                "threshold": 23.90000057220459,
+                "left": {
+                  "isLeaf": true,
+                  "prediction": "Sugarcane"
+                },
+                "right": {
+                  "isLeaf": false,
+                  "feature": "Phosphorous",
+                  "threshold": 16.0,
+                  "left": {
+                    "isLeaf": false,
+                    "feature": "Temparature",
+                    "threshold": 28.119999885559082,
+                    "left": {
+                      "isLeaf": false,
+                      "feature": "Nitrogen",
+                      "threshold": 34.0,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Barley"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Millets"
+                      }
+                    },
+                    "right": {
+                      "isLeaf": true,
+                      "prediction": "Maize"
+                    }
+                  },
+                  "right": {
+                    "isLeaf": false,
+                    "feature": "Nitrogen",
+                    "threshold": 24.0,
+                    "left": {
+                      "isLeaf": false,
+                      "feature": "Humidity",
+                      "threshold": 57.97999954223633,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Cotton"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Millets"
+                      }
+                    },
+                    "right": {
+                      "isLeaf": false,
+                      "feature": "Nitrogen",
+                      "threshold": 25.5,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Barley"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Paddy"
+                      }
+                    }
+                  }
+                }
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": "Sugarcane"
+              }
+            },
+            "right": {
+              "isLeaf": false,
+              "feature": "Humidity",
+              "threshold": 59.30500030517578,
+              "left": {
+                "isLeaf": false,
+                "feature": "Phosphorous",
+                "threshold": 0.5,
+                "left": {
+                  "isLeaf": false,
+                  "feature": "Moisture",
+                  "threshold": 47.76999855041504,
+                  "left": {
+                    "isLeaf": true,
+                    "prediction": "Sugarcane"
+                  },
+                  "right": {
+                    "isLeaf": false,
+                    "feature": "Nitrogen",
+                    "threshold": 40.5,
+                    "left": {
+                      "isLeaf": true,
+                      "prediction": "Paddy"
+                    },
+                    "right": {
+                      "isLeaf": true,
+                      "prediction": "Tobacco"
+                    }
+                  }
+                },
+                "right": {
+                  "isLeaf": false,
+                  "feature": "Temparature",
+                  "threshold": 30.899999618530273,
+                  "left": {
+                    "isLeaf": true,
+                    "prediction": "Wheat"
+                  },
+                  "right": {
+                    "isLeaf": false,
+                    "feature": "Nitrogen",
+                    "threshold": 41.5,
+                    "left": {
+                      "isLeaf": true,
+                      "prediction": "Tobacco"
+                    },
+                    "right": {
+                      "isLeaf": true,
+                      "prediction": "Maize"
+                    }
+                  }
+                }
+              },
+              "right": {
+                "isLeaf": false,
+                "feature": "Temparature",
+                "threshold": 30.730000495910645,
+                "left": {
+                  "isLeaf": false,
+                  "feature": "Humidity",
+                  "threshold": 59.71500015258789,
+                  "left": {
+                    "isLeaf": true,
+                    "prediction": "Cotton"
+                  },
+                  "right": {
+                    "isLeaf": false,
+                    "feature": "Phosphorous",
+                    "threshold": 13.5,
+                    "left": {
+                      "isLeaf": false,
+                      "feature": "Temparature",
+                      "threshold": 29.949999809265137,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Wheat"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Paddy"
+                      }
+                    },
+                    "right": {
+                      "isLeaf": false,
+                      "feature": "Nitrogen",
+                      "threshold": 10.5,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Paddy"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Barley"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "isLeaf": false,
+                  "feature": "Phosphorous",
+                  "threshold": 15.5,
+                  "left": {
+                    "isLeaf": false,
+                    "feature": "Humidity",
+                    "threshold": 63.739999771118164,
+                    "left": {
+                      "isLeaf": false,
+                      "feature": "Temparature",
+                      "threshold": 32.989999771118164,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Wheat"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Paddy"
+                      }
+                    },
+                    "right": {
+                      "isLeaf": false,
+                      "feature": "Temparature",
+                      "threshold": 33.614999771118164,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Millets"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Barley"
+                      }
+                    }
+                  },
+                  "right": {
+                    "isLeaf": false,
+                    "feature": "Humidity",
+                    "threshold": 65.08499908447266,
+                    "left": {
+                      "isLeaf": false,
+                      "feature": "Humidity",
+                      "threshold": 61.3799991607666,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Pulses"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Wheat"
+                      }
+                    },
+                    "right": {
+                      "isLeaf": false,
+                      "feature": "Phosphorous",
+                      "threshold": 21.5,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Pulses"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Cotton"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "right": {
+        "isLeaf": false,
+        "feature": "Nitrogen",
+        "threshold": 44.5,
+        "left": {
+          "isLeaf": false,
+          "feature": "Moisture",
+          "threshold": 21.744999885559082,
+          "left": {
+            "isLeaf": false,
+            "feature": "Moisture",
+            "threshold": 20.765000343322754,
+            "left": {
+              "isLeaf": false,
+              "feature": "Nitrogen",
+              "threshold": 10.5,
+              "left": {
+                "isLeaf": false,
+                "feature": "Potassium",
+                "threshold": 5.5,
+                "left": {
+                  "isLeaf": false,
+                  "feature": "Humidity",
+                  "threshold": 62.040000915527344,
+                  "left": {
+                    "isLeaf": false,
+                    "feature": "Temparature",
+                    "threshold": 31.155000686645508,
+                    "left": {
+                      "isLeaf": false,
+                      "feature": "Moisture",
+                      "threshold": 20.19499969482422,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Barley"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Ground Nuts"
+                      }
+                    },
+                    "right": {
+                      "isLeaf": false,
+                      "feature": "Humidity",
+                      "threshold": 54.75,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Sugarcane"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Cotton"
+                      }
+                    }
+                  },
+                  "right": {
+                    "isLeaf": false,
+                    "feature": "Soil Type",
+                    "threshold": 1.5,
+                    "left": {
+                      "isLeaf": false,
+                      "feature": "Phosphorous",
+                      "threshold": 30.0,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Paddy"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Pulses"
+                      }
+                    },
+                    "right": {
+                      "isLeaf": false,
+                      "feature": "Potassium",
+                      "threshold": 2.0,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Maize"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Millets"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "isLeaf": false,
+                  "feature": "Nitrogen",
+                  "threshold": 8.5,
+                  "left": {
+                    "isLeaf": false,
+                    "feature": "Temparature",
+                    "threshold": 25.489999771118164,
+                    "left": {
+                      "isLeaf": false,
+                      "feature": "Temparature",
+                      "threshold": 23.8100004196167,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Millets"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Pulses"
+                      }
+                    },
+                    "right": {
+                      "isLeaf": false,
+                      "feature": "Potassium",
+                      "threshold": 15.5,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Paddy"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Millets"
+                      }
+                    }
+                  },
+                  "right": {
+                    "isLeaf": false,
+                    "feature": "Phosphorous",
+                    "threshold": 28.0,
+                    "left": {
+                      "isLeaf": false,
+                      "feature": "Moisture",
+                      "threshold": 20.274999618530273,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Cotton"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Sugarcane"
+                      }
+                    },
+                    "right": {
+                      "isLeaf": false,
+                      "feature": "Temparature",
+                      "threshold": 31.954999923706055,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Ground Nuts"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Sugarcane"
+                      }
+                    }
+                  }
+                }
+              },
+              "right": {
+                "isLeaf": false,
+                "feature": "Phosphorous",
+                "threshold": 34.5,
+                "left": {
+                  "isLeaf": false,
+                  "feature": "Temparature",
+                  "threshold": 24.485000610351562,
+                  "left": {
+                    "isLeaf": false,
+                    "feature": "Temparature",
+                    "threshold": 23.190000534057617,
+                    "left": {
+                      "isLeaf": false,
+                      "feature": "Humidity",
+                      "threshold": 48.44999885559082,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Cotton"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Ground Nuts"
+                      }
+                    },
+                    "right": {
+                      "isLeaf": true,
+                      "prediction": "Oil seeds"
+                    }
+                  },
+                  "right": {
+                    "isLeaf": false,
+                    "feature": "Moisture",
+                    "threshold": 20.195000648498535,
+                    "left": {
+                      "isLeaf": false,
+                      "feature": "Phosphorous",
+                      "threshold": 30.5,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Barley"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Pulses"
+                      }
+                    },
+                    "right": {
+                      "isLeaf": false,
+                      "feature": "Nitrogen",
+                      "threshold": 12.5,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Oil seeds"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Pulses"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "isLeaf": false,
+                  "feature": "Nitrogen",
+                  "threshold": 13.5,
+                  "left": {
+                    "isLeaf": false,
+                    "feature": "Potassium",
+                    "threshold": 3.5,
+                    "left": {
+                      "isLeaf": true,
+                      "prediction": "Sugarcane"
+                    },
+                    "right": {
+                      "isLeaf": true,
+                      "prediction": "Tobacco"
+                    }
+                  },
+                  "right": {
+                    "isLeaf": false,
+                    "feature": "Soil Type",
+                    "threshold": 2.5,
+                    "left": {
+                      "isLeaf": true,
+                      "prediction": "Oil seeds"
+                    },
+                    "right": {
+                      "isLeaf": false,
+                      "feature": "Humidity",
+                      "threshold": 54.114999771118164,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Sugarcane"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Paddy"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "right": {
+              "isLeaf": false,
+              "feature": "Potassium",
+              "threshold": 13.5,
+              "left": {
+                "isLeaf": false,
+                "feature": "Nitrogen",
+                "threshold": 4.5,
+                "left": {
+                  "isLeaf": false,
+                  "feature": "Temparature",
+                  "threshold": 37.03499984741211,
+                  "left": {
+                    "isLeaf": false,
+                    "feature": "Phosphorous",
+                    "threshold": 28.5,
+                    "left": {
+                      "isLeaf": true,
+                      "prediction": "Ground Nuts"
+                    },
+                    "right": {
+                      "isLeaf": false,
+                      "feature": "Humidity",
+                      "threshold": 65.35500144958496,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Maize"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Cotton"
+                      }
+                    }
+                  },
+                  "right": {
+                    "isLeaf": true,
+                    "prediction": "Oil seeds"
+                  }
+                },
+                "right": {
+                  "isLeaf": false,
+                  "feature": "Potassium",
+                  "threshold": 5.0,
+                  "left": {
+                    "isLeaf": false,
+                    "feature": "Potassium",
+                    "threshold": 2.5,
+                    "left": {
+                      "isLeaf": false,
+                      "feature": "Temparature",
+                      "threshold": 29.515000343322754,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Cotton"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Sugarcane"
+                      }
+                    },
+                    "right": {
+                      "isLeaf": true,
+                      "prediction": "Paddy"
+                    }
+                  },
+                  "right": {
+                    "isLeaf": false,
+                    "feature": "Soil Type",
+                    "threshold": 1.5,
+                    "left": {
+                      "isLeaf": false,
+                      "feature": "Phosphorous",
+                      "threshold": 9.0,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Sugarcane"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Barley"
+                      }
+                    },
+                    "right": {
+                      "isLeaf": true,
+                      "prediction": "Sugarcane"
+                    }
+                  }
+                }
+              },
+              "right": {
+                "isLeaf": false,
+                "feature": "Temparature",
+                "threshold": 26.22000026702881,
+                "left": {
+                  "isLeaf": false,
+                  "feature": "Phosphorous",
+                  "threshold": 13.5,
+                  "left": {
+                    "isLeaf": true,
+                    "prediction": "Maize"
+                  },
+                  "right": {
+                    "isLeaf": false,
+                    "feature": "Phosphorous",
+                    "threshold": 19.5,
+                    "left": {
+                      "isLeaf": true,
+                      "prediction": "Oil seeds"
+                    },
+                    "right": {
+                      "isLeaf": true,
+                      "prediction": "Tobacco"
+                    }
+                  }
+                },
+                "right": {
+                  "isLeaf": false,
+                  "feature": "Temparature",
+                  "threshold": 30.40999984741211,
+                  "left": {
+                    "isLeaf": true,
+                    "prediction": "Ground Nuts"
+                  },
+                  "right": {
+                    "isLeaf": false,
+                    "feature": "Humidity",
+                    "threshold": 58.6299991607666,
+                    "left": {
+                      "isLeaf": true,
+                      "prediction": "Paddy"
+                    },
+                    "right": {
+                      "isLeaf": true,
+                      "prediction": "Ground Nuts"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "right": {
+            "isLeaf": false,
+            "feature": "Moisture",
+            "threshold": 22.105000495910645,
+            "left": {
+              "isLeaf": false,
+              "feature": "Phosphorous",
+              "threshold": 36.0,
+              "left": {
+                "isLeaf": false,
+                "feature": "Soil Type",
+                "threshold": 3.5,
+                "left": {
+                  "isLeaf": false,
+                  "feature": "Humidity",
+                  "threshold": 51.165000915527344,
+                  "left": {
+                    "isLeaf": true,
+                    "prediction": "Cotton"
+                  },
+                  "right": {
+                    "isLeaf": false,
+                    "feature": "Phosphorous",
+                    "threshold": 32.5,
+                    "left": {
+                      "isLeaf": true,
+                      "prediction": "Barley"
+                    },
+                    "right": {
+                      "isLeaf": true,
+                      "prediction": "Paddy"
+                    }
+                  }
+                },
+                "right": {
+                  "isLeaf": false,
+                  "feature": "Potassium",
+                  "threshold": 3.0,
+                  "left": {
+                    "isLeaf": true,
+                    "prediction": "Cotton"
+                  },
+                  "right": {
+                    "isLeaf": true,
+                    "prediction": "Millets"
+                  }
+                }
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": "Wheat"
+              }
+            },
+            "right": {
+              "isLeaf": false,
+              "feature": "Humidity",
+              "threshold": 79.59500122070312,
+              "left": {
+                "isLeaf": false,
+                "feature": "Humidity",
+                "threshold": 40.135000228881836,
+                "left": {
+                  "isLeaf": true,
+                  "prediction": "Pulses"
+                },
+                "right": {
+                  "isLeaf": false,
+                  "feature": "Temparature",
+                  "threshold": 30.335000038146973,
+                  "left": {
+                    "isLeaf": false,
+                    "feature": "Phosphorous",
+                    "threshold": 21.5,
+                    "left": {
+                      "isLeaf": false,
+                      "feature": "Temparature",
+                      "threshold": 25.714999198913574,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Pulses"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Ground Nuts"
+                      }
+                    },
+                    "right": {
+                      "isLeaf": false,
+                      "feature": "Humidity",
+                      "threshold": 69.375,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Cotton"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Wheat"
+                      }
+                    }
+                  },
+                  "right": {
+                    "isLeaf": false,
+                    "feature": "Moisture",
+                    "threshold": 47.91499900817871,
+                    "left": {
+                      "isLeaf": false,
+                      "feature": "Moisture",
+                      "threshold": 47.864999771118164,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Ground Nuts"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Barley"
+                      }
+                    },
+                    "right": {
+                      "isLeaf": false,
+                      "feature": "Potassium",
+                      "threshold": 16.5,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Ground Nuts"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Sugarcane"
+                      }
+                    }
+                  }
+                }
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": "Barley"
+              }
+            }
+          }
+        },
+        "right": {
+          "isLeaf": false,
+          "feature": "Humidity",
+          "threshold": 55.119998931884766,
+          "left": {
+            "isLeaf": false,
+            "feature": "Phosphorous",
+            "threshold": 2.0,
+            "left": {
+              "isLeaf": false,
+              "feature": "Moisture",
+              "threshold": 25.795000076293945,
+              "left": {
+                "isLeaf": true,
+                "prediction": "Millets"
+              },
+              "right": {
+                "isLeaf": false,
+                "feature": "Potassium",
+                "threshold": 2.5,
+                "left": {
+                  "isLeaf": false,
+                  "feature": "Temparature",
+                  "threshold": 24.84500026702881,
+                  "left": {
+                    "isLeaf": true,
+                    "prediction": "Oil seeds"
+                  },
+                  "right": {
+                    "isLeaf": false,
+                    "feature": "Humidity",
+                    "threshold": 49.92500114440918,
+                    "left": {
+                      "isLeaf": true,
+                      "prediction": "Sugarcane"
+                    },
+                    "right": {
+                      "isLeaf": true,
+                      "prediction": "Wheat"
+                    }
+                  }
+                },
+                "right": {
+                  "isLeaf": true,
+                  "prediction": "Oil seeds"
+                }
+              }
+            },
+            "right": {
+              "isLeaf": false,
+              "feature": "Potassium",
+              "threshold": 2.0,
+              "left": {
+                "isLeaf": true,
+                "prediction": "Millets"
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": "Maize"
+              }
+            }
+          },
+          "right": {
+            "isLeaf": false,
+            "feature": "Nitrogen",
+            "threshold": 45.5,
+            "left": {
+              "isLeaf": false,
+              "feature": "Phosphorous",
+              "threshold": 1.5,
+              "left": {
+                "isLeaf": false,
+                "feature": "Temparature",
+                "threshold": 30.77999973297119,
+                "left": {
+                  "isLeaf": false,
+                  "feature": "Moisture",
+                  "threshold": 35.454999923706055,
+                  "left": {
+                    "isLeaf": true,
+                    "prediction": "Pulses"
+                  },
+                  "right": {
+                    "isLeaf": false,
+                    "feature": "Temparature",
+                    "threshold": 27.0600004196167,
+                    "left": {
+                      "isLeaf": true,
+                      "prediction": "Tobacco"
+                    },
+                    "right": {
+                      "isLeaf": false,
+                      "feature": "Moisture",
+                      "threshold": 42.170000076293945,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Oil seeds"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Cotton"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "isLeaf": true,
+                  "prediction": "Tobacco"
+                }
+              },
+              "right": {
+                "isLeaf": false,
+                "feature": "Moisture",
+                "threshold": 44.39999961853027,
+                "left": {
+                  "isLeaf": false,
+                  "feature": "Temparature",
+                  "threshold": 34.814998626708984,
+                  "left": {
+                    "isLeaf": false,
+                    "feature": "Moisture",
+                    "threshold": 39.97500038146973,
+                    "left": {
+                      "isLeaf": false,
+                      "feature": "Humidity",
+                      "threshold": 58.635000228881836,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Sugarcane"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Oil seeds"
+                      }
+                    },
+                    "right": {
+                      "isLeaf": true,
+                      "prediction": "Millets"
+                    }
+                  },
+                  "right": {
+                    "isLeaf": true,
+                    "prediction": "Pulses"
+                  }
+                },
+                "right": {
+                  "isLeaf": true,
+                  "prediction": "Ground Nuts"
+                }
+              }
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": "Paddy"
+            }
+          }
+        }
+      }
+    },
+    "right": {
+      "isLeaf": false,
+      "feature": "Moisture",
+      "threshold": 48.44499969482422,
+      "left": {
+        "isLeaf": false,
+        "feature": "Phosphorous",
+        "threshold": 17.5,
+        "left": {
+          "isLeaf": false,
+          "feature": "Humidity",
+          "threshold": 59.165000915527344,
+          "left": {
+            "isLeaf": false,
+            "feature": "Moisture",
+            "threshold": 48.295000076293945,
+            "left": {
+              "isLeaf": true,
+              "prediction": "Oil seeds"
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": "Tobacco"
+            }
+          },
+          "right": {
+            "isLeaf": false,
+            "feature": "Nitrogen",
+            "threshold": 29.5,
+            "left": {
+              "isLeaf": true,
+              "prediction": "Wheat"
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": "Paddy"
+            }
+          }
+        },
+        "right": {
+          "isLeaf": false,
+          "feature": "Nitrogen",
+          "threshold": 8.0,
+          "left": {
+            "isLeaf": false,
+            "feature": "Soil Type",
+            "threshold": 1.5,
+            "left": {
+              "isLeaf": true,
+              "prediction": "Barley"
+            },
+            "right": {
+              "isLeaf": false,
+              "feature": "Temparature",
+              "threshold": 33.89500045776367,
+              "left": {
+                "isLeaf": true,
+                "prediction": "Tobacco"
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": "Oil seeds"
+              }
+            }
+          },
+          "right": {
+            "isLeaf": false,
+            "feature": "Temparature",
+            "threshold": 29.22499942779541,
+            "left": {
+              "isLeaf": true,
+              "prediction": "Wheat"
+            },
+            "right": {
+              "isLeaf": true,
+              "prediction": "Cotton"
+            }
+          }
+        }
+      },
+      "right": {
+        "isLeaf": false,
+        "feature": "Humidity",
+        "threshold": 74.58499908447266,
+        "left": {
+          "isLeaf": false,
+          "feature": "Moisture",
+          "threshold": 69.97000122070312,
+          "left": {
+            "isLeaf": false,
+            "feature": "Temparature",
+            "threshold": 20.77500057220459,
+            "left": {
+              "isLeaf": false,
+              "feature": "Temparature",
+              "threshold": 20.405000686645508,
+              "left": {
+                "isLeaf": false,
+                "feature": "Nitrogen",
+                "threshold": 34.5,
+                "left": {
+                  "isLeaf": true,
+                  "prediction": "Maize"
+                },
+                "right": {
+                  "isLeaf": false,
+                  "feature": "Nitrogen",
+                  "threshold": 36.5,
+                  "left": {
+                    "isLeaf": true,
+                    "prediction": "Oil seeds"
+                  },
+                  "right": {
+                    "isLeaf": true,
+                    "prediction": "Pulses"
+                  }
+                }
+              },
+              "right": {
+                "isLeaf": false,
+                "feature": "Phosphorous",
+                "threshold": 11.0,
+                "left": {
+                  "isLeaf": false,
+                  "feature": "Humidity",
+                  "threshold": 42.68000030517578,
+                  "left": {
+                    "isLeaf": true,
+                    "prediction": "Cotton"
+                  },
+                  "right": {
+                    "isLeaf": false,
+                    "feature": "Moisture",
+                    "threshold": 65.17000198364258,
+                    "left": {
+                      "isLeaf": true,
+                      "prediction": "Tobacco"
+                    },
+                    "right": {
+                      "isLeaf": false,
+                      "feature": "Moisture",
+                      "threshold": 67.17500305175781,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Barley"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Tobacco"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "isLeaf": false,
+                  "feature": "Soil Type",
+                  "threshold": 1.5,
+                  "left": {
+                    "isLeaf": true,
+                    "prediction": "Ground Nuts"
+                  },
+                  "right": {
+                    "isLeaf": true,
+                    "prediction": "Barley"
+                  }
+                }
+              }
+            },
+            "right": {
+              "isLeaf": false,
+              "feature": "Humidity",
+              "threshold": 46.43499946594238,
+              "left": {
+                "isLeaf": false,
+                "feature": "Nitrogen",
+                "threshold": 14.5,
+                "left": {
+                  "isLeaf": false,
+                  "feature": "Humidity",
+                  "threshold": 46.35999870300293,
+                  "left": {
+                    "isLeaf": false,
+                    "feature": "Humidity",
+                    "threshold": 42.834999084472656,
+                    "left": {
+                      "isLeaf": false,
+                      "feature": "Soil Type",
+                      "threshold": 0.5,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Ground Nuts"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Oil seeds"
+                      }
+                    },
+                    "right": {
+                      "isLeaf": false,
+                      "feature": "Phosphorous",
+                      "threshold": 6.5,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Maize"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Barley"
+                      }
+                    }
+                  },
+                  "right": {
+                    "isLeaf": true,
+                    "prediction": "Ground Nuts"
+                  }
+                },
+                "right": {
+                  "isLeaf": false,
+                  "feature": "Temparature",
+                  "threshold": 22.475000381469727,
+                  "left": {
+                    "isLeaf": false,
+                    "feature": "Humidity",
+                    "threshold": 44.52000045776367,
+                    "left": {
+                      "isLeaf": true,
+                      "prediction": "Maize"
+                    },
+                    "right": {
+                      "isLeaf": false,
+                      "feature": "Temparature",
+                      "threshold": 21.484999656677246,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Paddy"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Wheat"
+                      }
+                    }
+                  },
+                  "right": {
+                    "isLeaf": false,
+                    "feature": "Humidity",
+                    "threshold": 42.76500129699707,
+                    "left": {
+                      "isLeaf": false,
+                      "feature": "Temparature",
+                      "threshold": 28.375,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Ground Nuts"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Tobacco"
+                      }
+                    },
+                    "right": {
+                      "isLeaf": false,
+                      "feature": "Moisture",
+                      "threshold": 49.125,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Pulses"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Cotton"
+                      }
+                    }
+                  }
+                }
+              },
+              "right": {
+                "isLeaf": false,
+                "feature": "Humidity",
+                "threshold": 55.10499954223633,
+                "left": {
+                  "isLeaf": false,
+                  "feature": "Nitrogen",
+                  "threshold": 20.5,
+                  "left": {
+                    "isLeaf": false,
+                    "feature": "Temparature",
+                    "threshold": 22.899999618530273,
+                    "left": {
+                      "isLeaf": false,
+                      "feature": "Nitrogen",
+                      "threshold": 12.5,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Oil seeds"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Tobacco"
+                      }
+                    },
+                    "right": {
+                      "isLeaf": false,
+                      "feature": "Temparature",
+                      "threshold": 23.100000381469727,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Maize"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Millets"
+                      }
+                    }
+                  },
+                  "right": {
+                    "isLeaf": false,
+                    "feature": "Humidity",
+                    "threshold": 49.795000076293945,
+                    "left": {
+                      "isLeaf": false,
+                      "feature": "Potassium",
+                      "threshold": 2.5,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Wheat"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Oil seeds"
+                      }
+                    },
+                    "right": {
+                      "isLeaf": false,
+                      "feature": "Potassium",
+                      "threshold": 1.5,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Maize"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Millets"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "isLeaf": false,
+                  "feature": "Nitrogen",
+                  "threshold": 42.5,
+                  "left": {
+                    "isLeaf": false,
+                    "feature": "Humidity",
+                    "threshold": 74.18499755859375,
+                    "left": {
+                      "isLeaf": false,
+                      "feature": "Temparature",
+                      "threshold": 38.48500061035156,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Wheat"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Paddy"
+                      }
+                    },
+                    "right": {
+                      "isLeaf": false,
+                      "feature": "Temparature",
+                      "threshold": 37.51500129699707,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Maize"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Wheat"
+                      }
+                    }
+                  },
+                  "right": {
+                    "isLeaf": false,
+                    "feature": "Temparature",
+                    "threshold": 32.295000076293945,
+                    "left": {
+                      "isLeaf": false,
+                      "feature": "Humidity",
+                      "threshold": 59.454999923706055,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Sugarcane"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Tobacco"
+                      }
+                    },
+                    "right": {
+                      "isLeaf": false,
+                      "feature": "Temparature",
+                      "threshold": 34.53499984741211,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Ground Nuts"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Oil seeds"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "right": {
+            "isLeaf": false,
+            "feature": "Humidity",
+            "threshold": 52.64999961853027,
+            "left": {
+              "isLeaf": false,
+              "feature": "Nitrogen",
+              "threshold": 39.0,
+              "left": {
+                "isLeaf": false,
+                "feature": "Temparature",
+                "threshold": 26.109999656677246,
+                "left": {
+                  "isLeaf": false,
+                  "feature": "Nitrogen",
+                  "threshold": 24.5,
+                  "left": {
+                    "isLeaf": false,
+                    "feature": "Nitrogen",
+                    "threshold": 10.0,
+                    "left": {
+                      "isLeaf": false,
+                      "feature": "Nitrogen",
+                      "threshold": 8.5,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Millets"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Paddy"
+                      }
+                    },
+                    "right": {
+                      "isLeaf": false,
+                      "feature": "Humidity",
+                      "threshold": 50.86000061035156,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Barley"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Sugarcane"
+                      }
+                    }
+                  },
+                  "right": {
+                    "isLeaf": false,
+                    "feature": "Potassium",
+                    "threshold": 3.5,
+                    "left": {
+                      "isLeaf": false,
+                      "feature": "Temparature",
+                      "threshold": 24.625,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Ground Nuts"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Maize"
+                      }
+                    },
+                    "right": {
+                      "isLeaf": false,
+                      "feature": "Humidity",
+                      "threshold": 45.53499984741211,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Cotton"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Millets"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "isLeaf": false,
+                  "feature": "Phosphorous",
+                  "threshold": 32.5,
+                  "left": {
+                    "isLeaf": false,
+                    "feature": "Humidity",
+                    "threshold": 42.14500045776367,
+                    "left": {
+                      "isLeaf": true,
+                      "prediction": "Millets"
+                    },
+                    "right": {
+                      "isLeaf": false,
+                      "feature": "Phosphorous",
+                      "threshold": 3.5,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Sugarcane"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Sugarcane"
+                      }
+                    }
+                  },
+                  "right": {
+                    "isLeaf": false,
+                    "feature": "Soil Type",
+                    "threshold": 3.5,
+                    "left": {
+                      "isLeaf": true,
+                      "prediction": "Paddy"
+                    },
+                    "right": {
+                      "isLeaf": true,
+                      "prediction": "Tobacco"
+                    }
+                  }
+                }
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": "Paddy"
+              }
+            },
+            "right": {
+              "isLeaf": false,
+              "feature": "Phosphorous",
+              "threshold": 2.5,
+              "left": {
+                "isLeaf": false,
+                "feature": "Humidity",
+                "threshold": 55.1150016784668,
+                "left": {
+                  "isLeaf": false,
+                  "feature": "Temparature",
+                  "threshold": 27.074999809265137,
+                  "left": {
+                    "isLeaf": true,
+                    "prediction": "Paddy"
+                  },
+                  "right": {
+                    "isLeaf": false,
+                    "feature": "Nitrogen",
+                    "threshold": 36.0,
+                    "left": {
+                      "isLeaf": true,
+                      "prediction": "Ground Nuts"
+                    },
+                    "right": {
+                      "isLeaf": true,
+                      "prediction": "Barley"
+                    }
+                  }
+                },
+                "right": {
+                  "isLeaf": false,
+                  "feature": "Nitrogen",
+                  "threshold": 35.5,
+                  "left": {
+                    "isLeaf": true,
+                    "prediction": "Oil seeds"
+                  },
+                  "right": {
+                    "isLeaf": false,
+                    "feature": "Soil Type",
+                    "threshold": 0.5,
+                    "left": {
+                      "isLeaf": false,
+                      "feature": "Humidity",
+                      "threshold": 57.46999931335449,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Oil seeds"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Tobacco"
+                      }
+                    },
+                    "right": {
+                      "isLeaf": false,
+                      "feature": "Temparature",
+                      "threshold": 25.744999885559082,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Barley"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Oil seeds"
+                      }
+                    }
+                  }
+                }
+              },
+              "right": {
+                "isLeaf": false,
+                "feature": "Temparature",
+                "threshold": 32.94499969482422,
+                "left": {
+                  "isLeaf": false,
+                  "feature": "Temparature",
+                  "threshold": 24.074999809265137,
+                  "left": {
+                    "isLeaf": false,
+                    "feature": "Phosphorous",
+                    "threshold": 6.0,
+                    "left": {
+                      "isLeaf": true,
+                      "prediction": "Cotton"
+                    },
+                    "right": {
+                      "isLeaf": true,
+                      "prediction": "Sugarcane"
+                    }
+                  },
+                  "right": {
+                    "isLeaf": false,
+                    "feature": "Soil Type",
+                    "threshold": 0.5,
+                    "left": {
+                      "isLeaf": false,
+                      "feature": "Temparature",
+                      "threshold": 27.054999351501465,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Millets"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Maize"
+                      }
+                    },
+                    "right": {
+                      "isLeaf": false,
+                      "feature": "Nitrogen",
+                      "threshold": 7.5,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Tobacco"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Ground Nuts"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "isLeaf": false,
+                  "feature": "Temparature",
+                  "threshold": 33.27499961853027,
+                  "left": {
+                    "isLeaf": true,
+                    "prediction": "Paddy"
+                  },
+                  "right": {
+                    "isLeaf": false,
+                    "feature": "Nitrogen",
+                    "threshold": 4.5,
+                    "left": {
+                      "isLeaf": true,
+                      "prediction": "Sugarcane"
+                    },
+                    "right": {
+                      "isLeaf": false,
+                      "feature": "Humidity",
+                      "threshold": 58.025001525878906,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Ground Nuts"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Millets"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "right": {
+          "isLeaf": false,
+          "feature": "Temparature",
+          "threshold": 32.63999938964844,
+          "left": {
+            "isLeaf": false,
+            "feature": "Temparature",
+            "threshold": 30.505000114440918,
+            "left": {
+              "isLeaf": true,
+              "prediction": "Sugarcane"
+            },
+            "right": {
+              "isLeaf": false,
+              "feature": "Potassium",
+              "threshold": 6.0,
+              "left": {
+                "isLeaf": true,
+                "prediction": "Tobacco"
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": "Maize"
+              }
+            }
+          },
+          "right": {
+            "isLeaf": false,
+            "feature": "Temparature",
+            "threshold": 34.114999771118164,
+            "left": {
+              "isLeaf": false,
+              "feature": "Phosphorous",
+              "threshold": 34.5,
+              "left": {
+                "isLeaf": false,
+                "feature": "Nitrogen",
+                "threshold": 34.5,
+                "left": {
+                  "isLeaf": false,
+                  "feature": "Moisture",
+                  "threshold": 67.70499801635742,
+                  "left": {
+                    "isLeaf": true,
+                    "prediction": "Ground Nuts"
+                  },
+                  "right": {
+                    "isLeaf": true,
+                    "prediction": "Sugarcane"
+                  }
+                },
+                "right": {
+                  "isLeaf": false,
+                  "feature": "Moisture",
+                  "threshold": 54.69499969482422,
+                  "left": {
+                    "isLeaf": true,
+                    "prediction": "Oil seeds"
+                  },
+                  "right": {
+                    "isLeaf": true,
+                    "prediction": "Millets"
+                  }
+                }
+              },
+              "right": {
+                "isLeaf": true,
+                "prediction": "Wheat"
+              }
+            },
+            "right": {
+              "isLeaf": false,
+              "feature": "Humidity",
+              "threshold": 76.38999938964844,
+              "left": {
+                "isLeaf": false,
+                "feature": "Temparature",
+                "threshold": 38.81999969482422,
+                "left": {
+                  "isLeaf": false,
+                  "feature": "Soil Type",
+                  "threshold": 3.5,
+                  "left": {
+                    "isLeaf": false,
+                    "feature": "Humidity",
+                    "threshold": 76.09500122070312,
+                    "left": {
+                      "isLeaf": false,
+                      "feature": "Nitrogen",
+                      "threshold": 17.0,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Maize"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Tobacco"
+                      }
+                    },
+                    "right": {
+                      "isLeaf": true,
+                      "prediction": "Sugarcane"
+                    }
+                  },
+                  "right": {
+                    "isLeaf": false,
+                    "feature": "Potassium",
+                    "threshold": 0.5,
+                    "left": {
+                      "isLeaf": false,
+                      "feature": "Nitrogen",
+                      "threshold": 28.0,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Cotton"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Millets"
+                      }
+                    },
+                    "right": {
+                      "isLeaf": true,
+                      "prediction": "Ground Nuts"
+                    }
+                  }
+                },
+                "right": {
+                  "isLeaf": false,
+                  "feature": "Moisture",
+                  "threshold": 61.17499923706055,
+                  "left": {
+                    "isLeaf": false,
+                    "feature": "Nitrogen",
+                    "threshold": 8.0,
+                    "left": {
+                      "isLeaf": true,
+                      "prediction": "Barley"
+                    },
+                    "right": {
+                      "isLeaf": true,
+                      "prediction": "Maize"
+                    }
+                  },
+                  "right": {
+                    "isLeaf": true,
+                    "prediction": "Sugarcane"
+                  }
+                }
+              },
+              "right": {
+                "isLeaf": false,
+                "feature": "Nitrogen",
+                "threshold": 40.5,
+                "left": {
+                  "isLeaf": false,
+                  "feature": "Moisture",
+                  "threshold": 52.040000915527344,
+                  "left": {
+                    "isLeaf": true,
+                    "prediction": "Pulses"
+                  },
+                  "right": {
+                    "isLeaf": false,
+                    "feature": "Temparature",
+                    "threshold": 35.614999771118164,
+                    "left": {
+                      "isLeaf": false,
+                      "feature": "Temparature",
+                      "threshold": 35.14500045776367,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Paddy"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Millets"
+                      }
+                    },
+                    "right": {
+                      "isLeaf": false,
+                      "feature": "Humidity",
+                      "threshold": 78.86999893188477,
+                      "left": {
+                        "isLeaf": true,
+                        "prediction": "Sugarcane"
+                      },
+                      "right": {
+                        "isLeaf": true,
+                        "prediction": "Oil seeds"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "isLeaf": false,
+                  "feature": "Soil Type",
+                  "threshold": 3.5,
+                  "left": {
+                    "isLeaf": false,
+                    "feature": "Temparature",
+                    "threshold": 34.46999931335449,
+                    "left": {
+                      "isLeaf": true,
+                      "prediction": "Millets"
+                    },
+                    "right": {
+                      "isLeaf": true,
+                      "prediction": "Tobacco"
+                    }
+                  },
+                  "right": {
+                    "isLeaf": false,
+                    "feature": "Potassium",
+                    "threshold": 2.0,
+                    "left": {
+                      "isLeaf": true,
+                      "prediction": "Cotton"
+                    },
+                    "right": {
+                      "isLeaf": true,
+                      "prediction": "Paddy"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
