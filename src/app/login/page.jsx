@@ -52,7 +52,12 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="relative min-h-screen flex items-center justify-center bg-[#0b0f19] px-6">
+    <div className="relative min-h-screen flex items-center justify-center bg-[#080d09] px-6">
+      
+      {/* Background Agriculture Image Watermark Overlay */}
+      <div 
+        className="absolute inset-0 bg-[url('/images/hero_farm.jpg')] bg-cover bg-center opacity-[0.05] pointer-events-none mix-blend-overlay"
+      />
       
       {/* Background Gradients */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] rounded-full bg-emerald-500/10 blur-[80px] pointer-events-none animate-pulse" />
@@ -66,7 +71,7 @@ export default function LoginPage() {
         </Link>
       </div>
 
-      <Card className="w-full max-w-md border-white/5 bg-[#0e1626]/80 backdrop-blur-xl shadow-2xl relative z-10">
+      <Card className="w-full max-w-md border-emerald-500/10 bg-[#0b170e]/80 backdrop-blur-xl shadow-2xl relative z-10">
         <CardHeader className="space-y-1.5 pt-8 px-8">
           <CardTitle className="text-2xl font-bold text-white tracking-tight">Sign In</CardTitle>
           <CardDescription className="text-slate-400 text-xs">

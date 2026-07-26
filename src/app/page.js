@@ -136,6 +136,12 @@ export default function LandingPage() {
   return (
     <div className="relative min-h-screen overflow-hidden bg-radial-[circle_at_top,_var(--tw-gradient-stops)] from-[#122c1b] via-[#070d09] to-[#070d09] bg-[linear-gradient(to_right,#ffffff01_1px,transparent_1px),linear-gradient(to_bottom,#ffffff01_1px,transparent_1px)] bg-[size:32px_32px] font-sans selection:bg-emerald-500/30 text-left">
       
+      {/* Background Agriculture Image Watermark Overlay */}
+      <div 
+        className="absolute inset-0 bg-[url('/images/hero_farm.jpg')] bg-cover bg-center opacity-[0.05] pointer-events-none mix-blend-overlay"
+        style={{ height: '1400px' }}
+      />
+      
       {/* Background Decorative Gradients */}
       <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] rounded-full bg-emerald-500/5 blur-[120px] pointer-events-none" />
       <div className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] rounded-full bg-teal-500/5 blur-[120px] pointer-events-none" />
