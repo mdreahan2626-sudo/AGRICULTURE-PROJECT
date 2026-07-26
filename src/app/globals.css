@@ -128,3 +128,153 @@
     @apply font-sans;
   }
 }
+
+/* ==========================================
+   🌾 Light Agricultural Theme Overrides 🌾
+   ========================================== */
+
+/* Set global backgrounds to a soft, warm agricultural mint/cream color */
+body, 
+.bg-\[\#0b0f19\],
+.bg-\[\#080d09\] {
+  background-color: #f4f8f5 !important;
+  color: #162e1e !important;
+}
+
+/* Header background opacity */
+.bg-\[\#070d09\]\/70,
+.bg-\[\#080d09\]\/80 {
+  background-color: rgba(244, 248, 245, 0.8) !important;
+  border-bottom: 1px solid rgba(0, 100, 0, 0.08) !important;
+}
+
+/* Cards & containers: change from dark background to clean glassmorphic white */
+.bg-\[\#0b170e\]\/80,
+.bg-\[\#0e1626\]\/80,
+.bg-\[\#0e1626\]\/40,
+.bg-\[\#0e1626\]\/30,
+.bg-\[\#0e1626\]\/20,
+.bg-\[\#0e1626\]\/50,
+.bg-white\/\[0\.01\],
+.bg-white\/\[0\.03\] {
+  background-color: rgba(255, 255, 255, 0.92) !important;
+  border-color: rgba(16, 185, 129, 0.12) !important;
+  box-shadow: 0 10px 30px -5px rgba(0, 50, 0, 0.05) !important;
+}
+
+.bg-\[\#0e1626\]\/60 {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+}
+
+/* Gradients: shift from deep dark green to light mint and cream */
+.from-\[\#122c1b\] {
+  --tw-gradient-from: #e2f3e7 !important;
+}
+.via-\[\#070d09\] {
+  --tw-gradient-via: #f4f8f5 !important;
+}
+.to-\[\#070d09\] {
+  --tw-gradient-to: #f4f8f5 !important;
+}
+
+.from-white\/\[0\.01\] {
+  --tw-gradient-from: rgba(0, 100, 0, 0.02) !important;
+}
+
+/* Typography adjustments: change text colors from white/slate-100 to deep charcoal/forest-green */
+.text-white,
+.text-slate-100,
+h1, h2, h3, h4, h5, h6 {
+  color: #112618 !important;
+}
+
+.text-slate-300,
+.text-slate-400,
+.text-slate-500 {
+  color: #38523f !important;
+}
+
+/* Card Borders & Dividers */
+.border-white\/5,
+.border-white\/10,
+.border-emerald-500\/5,
+.border-emerald-500\/10,
+.border-emerald-500\/20 {
+  border-color: rgba(16, 185, 129, 0.12) !important;
+}
+
+.w-px.bg-white\/5 {
+  background-color: rgba(16, 185, 129, 0.15) !important;
+}
+
+/* Custom overrides for select menu and dropdown backgrounds */
+.bg-\[\#0e1626\] {
+  background-color: #ffffff !important;
+  color: #112618 !important;
+  border: 1px solid rgba(16, 185, 129, 0.12) !important;
+}
+
+/* Overlays & Interactive items */
+.bg-emerald-500\/5 {
+  background-color: rgba(16, 185, 129, 0.04) !important;
+}
+.bg-teal-500\/5 {
+  background-color: rgba(20, 184, 166, 0.04) !important;
+}
+.bg-white\/5 {
+  background-color: rgba(0, 100, 0, 0.03) !important;
+  border-color: rgba(0, 100, 0, 0.06) !important;
+}
+.bg-white\/10 {
+  background-color: rgba(0, 100, 0, 0.06) !important;
+}
+
+/* Inputs & Forms */
+input[type="range"] {
+  background-color: rgba(0, 100, 0, 0.08) !important;
+}
+
+input, select, textarea {
+  background-color: #ffffff !important;
+  color: #112618 !important;
+  border: 1px solid rgba(16, 185, 129, 0.2) !important;
+}
+
+/* Lucide icons adjustments to pop beautifully on light background */
+.text-emerald-400 {
+  color: #059669 !important;
+}
+.text-teal-400 {
+  color: #0d9488 !important;
+}
+.text-sky-400 {
+  color: #0284c7 !important;
+}
+.text-indigo-400 {
+  color: #4f46e5 !important;
+}
+.text-amber-400 {
+  color: #d97706 !important;
+}
+.text-slate-400 {
+  color: #38523f !important;
+}
+
+/* Button & interactive states */
+.bg-emerald-500 {
+  background-color: #059669 !important;
+  color: #ffffff !important;
+}
+.bg-emerald-500:hover {
+  background-color: #047857 !important;
+}
+
+.bg-gradient-to-r.from-emerald-500.to-teal-500 {
+  background-image: linear-gradient(to right, #059669, #0d9488) !important;
+  color: #ffffff !important;
+}
+
+/* Watermark opacity boost for visibility on light backgrounds */
+.opacity-\[0\.05\] {
+  opacity: 0.07 !important;
+}
