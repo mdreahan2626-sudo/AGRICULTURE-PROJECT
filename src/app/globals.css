@@ -278,3 +278,26 @@ input, select, textarea {
 .opacity-\[0\.05\] {
   opacity: 0.07 !important;
 }
+
+/* Shaded Green and Black header styles */
+.agro-header {
+  background: linear-gradient(to right, #040905, #0a170e) !important;
+  border-bottom: 1px solid rgba(16, 185, 129, 0.2) !important;
+}
+
+/* Scoped rules to ensure all items in the header stay light & visible */
+.agro-header span,
+.agro-header a,
+.agro-header button,
+.agro-header div {
+  color: #e2f3e7 !important;
+}
+
+.agro-header a:hover,
+.agro-header button:hover {
+  color: #ffffff !important;
+}
+
+.agro-header .text-emerald-400 {
+  color: #34d399 !important;
+}

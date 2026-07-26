@@ -148,7 +148,7 @@ export default function LandingPage() {
       <div className="absolute top-[30%] left-[25%] w-[400px] h-[400px] rounded-full bg-violet-500/5 blur-[150px] pointer-events-none animate-pulse duration-[8s]" />
 
       {/* Header */}
-      <header className="sticky top-0 z-50 border-b border-white/5 bg-[#070d09]/70 backdrop-blur-md">
+      <header className="sticky top-0 z-50 border-b border-white/5 agro-header backdrop-blur-md">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-2.5">
             <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-500 to-teal-400 flex items-center justify-center shadow-lg shadow-emerald-500/20 hover:rotate-6 transition duration-300">
