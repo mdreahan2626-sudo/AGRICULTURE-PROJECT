@@ -134,7 +134,7 @@ export default function LandingPage() {
   ]
 
   return (
-    <div className="relative min-h-screen overflow-hidden bg-radial-[circle_at_top,_var(--tw-gradient-stops)] from-[#17251e] via-[#0b0f19] to-[#0b0f19] bg-[linear-gradient(to_right,#ffffff02_1px,transparent_1px),linear-gradient(to_bottom,#ffffff02_1px,transparent_1px)] bg-[size:32px_32px] font-sans selection:bg-emerald-500/30 text-left">
+    <div className="relative min-h-screen overflow-hidden bg-radial-[circle_at_top,_var(--tw-gradient-stops)] from-[#122c1b] via-[#070d09] to-[#070d09] bg-[linear-gradient(to_right,#ffffff01_1px,transparent_1px),linear-gradient(to_bottom,#ffffff01_1px,transparent_1px)] bg-[size:32px_32px] font-sans selection:bg-emerald-500/30 text-left">
       
       {/* Background Decorative Gradients */}
       <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] rounded-full bg-emerald-500/5 blur-[120px] pointer-events-none" />
@@ -142,7 +142,7 @@ export default function LandingPage() {
       <div className="absolute top-[30%] left-[25%] w-[400px] h-[400px] rounded-full bg-violet-500/5 blur-[150px] pointer-events-none animate-pulse duration-[8s]" />
 
       {/* Header */}
-      <header className="sticky top-0 z-50 border-b border-white/5 bg-[#0b0f19]/70 backdrop-blur-md">
+      <header className="sticky top-0 z-50 border-b border-white/5 bg-[#070d09]/70 backdrop-blur-md">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-2.5">
             <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-500 to-teal-400 flex items-center justify-center shadow-lg shadow-emerald-500/20 hover:rotate-6 transition duration-300">
@@ -264,7 +264,7 @@ export default function LandingPage() {
           <div className="lg:col-span-5 relative w-full">
             <div className="absolute inset-0 bg-gradient-to-tr from-emerald-500/10 to-violet-400/15 rounded-3xl blur-[40px] pointer-events-none" />
             
-            <div className="relative w-full rounded-2xl border border-white/10 bg-[#0e1626]/80 backdrop-blur-xl p-6 flex flex-col justify-between overflow-hidden shadow-2xl space-y-6">
+            <div className="relative w-full rounded-2xl border border-emerald-500/10 bg-[#0b170e]/80 backdrop-blur-xl p-6 flex flex-col justify-between overflow-hidden shadow-2xl space-y-6">
               
               {/* Sandbox Header */}
               <div className="flex items-center justify-between border-b border-white/5 pb-4">
@@ -357,6 +357,39 @@ export default function LandingPage() {
           </div>
         </div>
 
+        {/* Interactive Visual Showcase */}
+        <div className="mt-32 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center border-y border-white/5 py-16">
+          <div className="relative group overflow-hidden rounded-2xl border border-emerald-500/10 shadow-2xl">
+            <img 
+              src="/images/hero_farm.jpg" 
+              alt="Smart Agriculture Farm" 
+              className="w-full h-80 object-cover transition duration-500 group-hover:scale-105" 
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex flex-col justify-end">
+              <span className="text-[10px] text-emerald-400 font-bold uppercase tracking-wider block">IoT Sensor Grids</span>
+              <h3 className="text-xl font-bold text-white mt-1">Smart Farm Integration</h3>
+              <p className="text-slate-300 text-xs mt-2 max-w-sm">
+                Our models analyze micro-climate metrics, soil type maps, and chemical composition to prescribe specific crop management cycles.
+              </p>
+            </div>
+          </div>
+          
+          <div className="relative group overflow-hidden rounded-2xl border border-emerald-500/10 shadow-2xl">
+            <img 
+              src="/images/soil_health.jpg" 
+              alt="Healthy Organic Soil Health" 
+              className="w-full h-80 object-cover transition duration-500 group-hover:scale-105" 
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex flex-col justify-end">
+              <span className="text-[10px] text-amber-400 font-bold uppercase tracking-wider block">NPK Diagnostics</span>
+              <h3 className="text-xl font-bold text-white mt-1">Soil Composition Analysis</h3>
+              <p className="text-slate-300 text-xs mt-2 max-w-sm">
+                Understand the chemical balance of your land. Optimize Nitrogen, Phosphorous, and Potassium levels for healthier crop yields.
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* Modules Option Hub Grid */}
         <div className="mt-32 space-y-12">
           <div className="text-center max-w-2xl mx-auto space-y-3">
@@ -416,7 +449,7 @@ export default function LandingPage() {
         {/* Tech Stack Metrics */}
         <div className="mt-32 grid grid-cols-1 md:grid-cols-3 gap-8 border-t border-white/5 pt-16">
           
-          <div className="p-6 rounded-2xl bg-[#0e1626]/20 border border-white/5 hover:border-white/10 transition flex items-start gap-4 text-left">
+          <div className="p-6 rounded-2xl bg-[#0b170e]/40 border border-emerald-500/5 hover:border-emerald-500/15 transition flex items-start gap-4 text-left">
             <div className="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 shrink-0">
               <Cpu className="w-5 h-5" />
             </div>
@@ -428,7 +461,7 @@ export default function LandingPage() {
             </div>
           </div>
 
-          <div className="p-6 rounded-2xl bg-[#0e1626]/20 border border-white/5 hover:border-white/10 transition flex items-start gap-4 text-left">
+          <div className="p-6 rounded-2xl bg-[#0b170e]/40 border border-emerald-500/5 hover:border-emerald-500/15 transition flex items-start gap-4 text-left">
             <div className="w-10 h-10 rounded-xl bg-teal-500/10 border border-teal-500/20 flex items-center justify-center text-teal-400 shrink-0">
               <Database className="w-5 h-5" />
             </div>
@@ -440,7 +473,7 @@ export default function LandingPage() {
             </div>
           </div>
 
-          <div className="p-6 rounded-2xl bg-[#0e1626]/20 border border-white/5 hover:border-white/10 transition flex items-start gap-4 text-left">
+          <div className="p-6 rounded-2xl bg-[#0b170e]/40 border border-emerald-500/5 hover:border-emerald-500/15 transition flex items-start gap-4 text-left">
             <div className="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 shrink-0">
               <ShieldCheck className="w-5 h-5" />
             </div>

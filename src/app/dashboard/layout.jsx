@@ -56,9 +56,9 @@ export default function DashboardLayout({ children }) {
   ]
 
   return (
-    <div className="min-h-screen bg-[#0b0f19] text-slate-100 flex flex-col">
+    <div className="min-h-screen bg-[#080d09] text-slate-100 flex flex-col">
       {/* Header */}
-      <header className="sticky top-0 z-50 border-b border-white/5 bg-[#0b0f19]/80 backdrop-blur-md">
+      <header className="sticky top-0 z-50 border-b border-white/5 bg-[#080d09]/80 backdrop-blur-md">
         <div className="max-w-7xl mx-auto px-6 h-18 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Link href="/" className="flex items-center gap-2">
