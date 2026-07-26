@@ -10,6 +10,7 @@ import {
   ArrowRight, User, LogOut, Loader2, ShoppingBag, Sliders, Play
 } from 'lucide-react'
 import { predictCrop } from '@/lib/predictor'
+import { ThemeToggle } from '@/components/theme-toggle'
 
 export default function LandingPage() {
   const [user, setUser] = useState(null)
@@ -161,6 +162,7 @@ export default function LandingPage() {
           </div>
 
           <div className="flex items-center gap-4">
+            <ThemeToggle />
             {loading ? (
               <Loader2 className="w-5 h-5 text-slate-500 animate-spin" />
             ) : user ? (

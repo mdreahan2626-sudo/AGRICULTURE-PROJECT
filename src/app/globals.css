@@ -129,154 +129,243 @@
   }
 }
 
-/* ==========================================
-   🌾 Light Agricultural Theme Overrides 🌾
-   ========================================== */
+/* =========================================================
+   🌾 Light & Dark Scoped Agricultural Theme Overrides 🌾
+   ========================================================= */
+
+/* --- 1. LIGHT MODE SPECIFIC OVERRIDES --- */
 
 /* Set global backgrounds to a soft, warm agricultural mint/cream color */
-body, 
-.bg-\[\#0b0f19\],
-.bg-\[\#080d09\] {
+html:not(.dark) body, 
+html:not(.dark) .bg-\[\#0b0f19\],
+html:not(.dark) .bg-\[\#080d09\] {
   background-color: #f4f8f5 !important;
   color: #162e1e !important;
 }
 
 /* Header background opacity */
-.bg-\[\#070d09\]\/70,
-.bg-\[\#080d09\]\/80 {
+html:not(.dark) .bg-\[\#070d09\]\/70,
+html:not(.dark) .bg-\[\#080d09\]\/80 {
   background-color: rgba(244, 248, 245, 0.8) !important;
   border-bottom: 1px solid rgba(0, 100, 0, 0.08) !important;
 }
 
 /* Cards & containers: change from dark background to clean glassmorphic white */
-.bg-\[\#0b170e\]\/80,
-.bg-\[\#0e1626\]\/80,
-.bg-\[\#0e1626\]\/40,
-.bg-\[\#0e1626\]\/30,
-.bg-\[\#0e1626\]\/20,
-.bg-\[\#0e1626\]\/50,
-.bg-white\/\[0\.01\],
-.bg-white\/\[0\.03\] {
+html:not(.dark) .bg-\[\#0b170e\]\/80,
+html:not(.dark) .bg-\[\#0e1626\]\/80,
+html:not(.dark) .bg-\[\#0e1626\]\/40,
+html:not(.dark) .bg-\[\#0e1626\]\/30,
+html:not(.dark) .bg-\[\#0e1626\]\/20,
+html:not(.dark) .bg-\[\#0e1626\]\/50,
+html:not(.dark) .bg-white\/\[0\.01\],
+html:not(.dark) .bg-white\/\[0\.03\] {
   background-color: rgba(255, 255, 255, 0.92) !important;
   border-color: rgba(16, 185, 129, 0.12) !important;
   box-shadow: 0 10px 30px -5px rgba(0, 50, 0, 0.05) !important;
 }
 
-.bg-\[\#0e1626\]\/60 {
+html:not(.dark) .bg-\[\#0e1626\]\/60 {
   background-color: rgba(255, 255, 255, 0.95) !important;
 }
 
 /* Gradients: shift from deep dark green to light mint and cream */
-.from-\[\#122c1b\] {
+html:not(.dark) .from-\[\#122c1b\] {
   --tw-gradient-from: #e2f3e7 !important;
 }
-.via-\[\#070d09\] {
+html:not(.dark) .via-\[\#070d09\] {
   --tw-gradient-via: #f4f8f5 !important;
 }
-.to-\[\#070d09\] {
+html:not(.dark) .to-\[\#070d09\] {
   --tw-gradient-to: #f4f8f5 !important;
 }
 
-.from-white\/\[0\.01\] {
+html:not(.dark) .from-white\/\[0\.01\] {
   --tw-gradient-from: rgba(0, 100, 0, 0.02) !important;
 }
 
 /* Typography adjustments: change text colors from white/slate-100 to deep charcoal/forest-green */
-.text-white,
-.text-slate-100,
-h1, h2, h3, h4, h5, h6 {
+html:not(.dark) .text-white,
+html:not(.dark) .text-slate-100,
+html:not(.dark) h1, html:not(.dark) h2, html:not(.dark) h3, html:not(.dark) h4, html:not(.dark) h5, html:not(.dark) h6 {
   color: #112618 !important;
 }
 
-.text-slate-300,
-.text-slate-400,
-.text-slate-500 {
+html:not(.dark) .text-slate-300,
+html:not(.dark) .text-slate-400,
+html:not(.dark) .text-slate-500 {
   color: #38523f !important;
 }
 
 /* Card Borders & Dividers */
-.border-white\/5,
-.border-white\/10,
-.border-emerald-500\/5,
-.border-emerald-500\/10,
-.border-emerald-500\/20 {
+html:not(.dark) .border-white\/5,
+html:not(.dark) .border-white\/10,
+html:not(.dark) .border-emerald-500\/5,
+html:not(.dark) .border-emerald-500\/10,
+html:not(.dark) .border-emerald-500\/20 {
   border-color: rgba(16, 185, 129, 0.12) !important;
 }
 
-.w-px.bg-white\/5 {
+html:not(.dark) .w-px.bg-white\/5 {
   background-color: rgba(16, 185, 129, 0.15) !important;
 }
 
 /* Custom overrides for select menu and dropdown backgrounds */
-.bg-\[\#0e1626\] {
+html:not(.dark) .bg-\[\#0e1626\] {
   background-color: #ffffff !important;
   color: #112618 !important;
   border: 1px solid rgba(16, 185, 129, 0.12) !important;
 }
 
 /* Overlays & Interactive items */
-.bg-emerald-500\/5 {
+html:not(.dark) .bg-emerald-500\/5 {
   background-color: rgba(16, 185, 129, 0.04) !important;
 }
-.bg-teal-500\/5 {
+html:not(.dark) .bg-teal-500\/5 {
   background-color: rgba(20, 184, 166, 0.04) !important;
 }
-.bg-white\/5 {
+html:not(.dark) .bg-white\/5 {
   background-color: rgba(0, 100, 0, 0.03) !important;
   border-color: rgba(0, 100, 0, 0.06) !important;
 }
-.bg-white\/10 {
+html:not(.dark) .bg-white\/10 {
   background-color: rgba(0, 100, 0, 0.06) !important;
 }
 
 /* Inputs & Forms */
-input[type="range"] {
+html:not(.dark) input[type="range"] {
   background-color: rgba(0, 100, 0, 0.08) !important;
 }
 
-input, select, textarea {
+html:not(.dark) input, html:not(.dark) select, html:not(.dark) textarea {
   background-color: #ffffff !important;
   color: #112618 !important;
   border: 1px solid rgba(16, 185, 129, 0.2) !important;
 }
 
 /* Lucide icons adjustments to pop beautifully on light background */
-.text-emerald-400 {
+html:not(.dark) .text-emerald-400 {
   color: #059669 !important;
 }
-.text-teal-400 {
+html:not(.dark) .text-teal-400 {
   color: #0d9488 !important;
 }
-.text-sky-400 {
+html:not(.dark) .text-sky-400 {
   color: #0284c7 !important;
 }
-.text-indigo-400 {
+html:not(.dark) .text-indigo-400 {
   color: #4f46e5 !important;
 }
-.text-amber-400 {
+html:not(.dark) .text-amber-400 {
   color: #d97706 !important;
 }
-.text-slate-400 {
+html:not(.dark) .text-slate-400 {
   color: #38523f !important;
 }
 
 /* Button & interactive states */
-.bg-emerald-500 {
+html:not(.dark) .bg-emerald-500 {
   background-color: #059669 !important;
   color: #ffffff !important;
 }
-.bg-emerald-500:hover {
+html:not(.dark) .bg-emerald-500:hover {
   background-color: #047857 !important;
 }
 
-.bg-gradient-to-r.from-emerald-500.to-teal-500 {
+html:not(.dark) .bg-gradient-to-r.from-emerald-500.to-teal-500 {
   background-image: linear-gradient(to right, #059669, #0d9488) !important;
   color: #ffffff !important;
 }
 
 /* Watermark opacity boost for visibility on light backgrounds */
-.opacity-\[0\.05\] {
+html:not(.dark) .opacity-\[0\.05\] {
   opacity: 0.07 !important;
+}
+
+/* --- 2. DARK MODE SPECIFIC OVERRIDES --- */
+
+/* Ensure dark backgrounds resolve to deep forest black in dark mode */
+html.dark body,
+html.dark .bg-\[\#0b0f19\],
+html.dark .bg-\[\#080d09\] {
+  background-color: #070d08 !important;
+  color: #e2f3e7 !important;
+}
+
+/* Dark mode header background styling */
+html.dark .bg-\[\#070d09\]\/70,
+html.dark .bg-\[\#080d09\]\/80 {
+  background-color: rgba(7, 13, 8, 0.8) !important;
+  border-bottom: 1px solid rgba(16, 185, 129, 0.15) !important;
+}
+
+/* Dark cards & containers */
+html.dark .bg-\[\#0b170e\]\/80,
+html.dark .bg-\[\#0e1626\]\/80,
+html.dark .bg-\[\#0e1626\]\/40,
+html.dark .bg-\[\#0e1626\]\/30,
+html.dark .bg-\[\#0e1626\]\/20,
+html.dark .bg-\[\#0e1626\]\/50,
+html.dark .bg-white\/\[0\.01\],
+html.dark .bg-white\/\[0\.03\] {
+  background-color: rgba(11, 23, 14, 0.82) !important;
+  border-color: rgba(16, 185, 129, 0.1) !important;
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.3) !important;
+}
+
+html.dark .bg-\[\#0e1626\]\/60 {
+  background-color: rgba(11, 23, 14, 0.9) !important;
+}
+
+/* Dark Gradients: deep dark green to deep black */
+html.dark .from-\[\#122c1b\] {
+  --tw-gradient-from: #122c1b !important;
+}
+html.dark .via-\[\#070d09\] {
+  --tw-gradient-via: #070d09 !important;
+}
+html.dark .to-\[\#070d09\] {
+  --tw-gradient-to: #070d09 !important;
+}
+
+/* Dark Typography settings */
+html.dark .text-white,
+html.dark .text-slate-100,
+html.dark h1, html.dark h2, html.dark h3, html.dark h4, html.dark h5, html.dark h6 {
+  color: #e2f3e7 !important;
+}
+
+html.dark .text-slate-300,
+html.dark .text-slate-400,
+html.dark .text-slate-500 {
+  color: #8fa896 !important;
+}
+
+/* Card Borders & Dividers in dark mode */
+html.dark .border-white\/5,
+html.dark .border-white\/10,
+html.dark .border-emerald-500\/5,
+html.dark .border-emerald-500\/10,
+html.dark .border-emerald-500\/20 {
+  border-color: rgba(16, 185, 129, 0.1) !important;
+}
+
+/* Custom overrides for select menu and dropdown backgrounds in dark mode */
+html.dark .bg-\[\#0e1626\] {
+  background-color: #0b170e !important;
+  color: #e2f3e7 !important;
+  border: 1px solid rgba(16, 185, 129, 0.12) !important;
+}
+
+/* Inputs & Forms in dark mode */
+html.dark input, html.dark select, html.dark textarea {
+  background-color: #0b170e !important;
+  color: #e2f3e7 !important;
+  border: 1px solid rgba(16, 185, 129, 0.15) !important;
+}
+
+/* Watermark adjustments for dark mode */
+html.dark .opacity-\[0\.05\] {
+  opacity: 0.05 !important;
 }
 
 /* Shaded Green and Black header styles */

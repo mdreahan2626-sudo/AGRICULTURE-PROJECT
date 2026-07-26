@@ -5,6 +5,7 @@ import { useRouter, usePathname } from 'next/navigation'
 import Link from 'next/link'
 import { toast } from 'sonner'
 import { Leaf, User, LogOut, RefreshCw } from 'lucide-react'
+import { ThemeToggle } from '@/components/theme-toggle'
 
 export default function DashboardLayout({ children }) {
   const router = useRouter()
@@ -93,6 +94,7 @@ export default function DashboardLayout({ children }) {
           </div>
 
           <div className="flex items-center gap-6">
+            <ThemeToggle />
             <div className="flex items-center gap-2 text-xs text-slate-400">
               <User className="w-4 h-4 text-emerald-400" />
               <span>{user ? user.name : 'Loading...'}</span>
