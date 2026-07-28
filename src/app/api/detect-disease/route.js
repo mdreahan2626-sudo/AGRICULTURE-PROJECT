@@ -31,26 +31,48 @@ export async function POST(req) {
       )
     }
 
-    // 3. Process base64 data and mime type
-    const matches = image.match(/^data:([a-zA-Z0-9]+\/[a-zA-Z0-9-.+]+);base64,(.+)$/)
-    let mimeType = 'image/jpeg'
-    let base64Data = image
+    const DISEASE_SERVICE_URL = process.env.DISEASE_SERVICE_URL
 
-    if (matches && matches.length === 3) {
-      mimeType = matches[1]
-      base64Data = matches[2]
-    }
+    if (DISEASE_SERVICE_URL) {
+      // Proxy to Disease Microservice
+      const serviceRes = await fetch(`${DISEASE_SERVICE_URL}/api/detect-disease`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ image }),
+      })
 
-    // 4. Construct Gemini API call
-    const GEMINI_API_KEY = process.env.GEMINI_API_KEY
-    if (!GEMINI_API_KEY) {
-      return NextResponse.json(
-        { error: 'Gemini API key is not configured' },
-        { status: 500 }
-      )
-    }
+      const serviceData = await serviceRes.json()
 
-    const promptText = `
+      if (!serviceRes.ok) {
+        console.error('Microservice Disease Detection Error details:', serviceData)
+        throw new Error(serviceData.error || 'Microservice call failed')
+      }
+
+      return NextResponse.json(serviceData)
+    } else {
+      // Serverless execution: call Gemini Vision directly
+      // 1. Process base64 data and mime type
+      const matches = image.match(/^data:([a-zA-Z0-9]+\/[a-zA-Z0-9-.+]+);base64,(.+)$/)
+      let mimeType = 'image/jpeg'
+      let base64Data = image
+
+      if (matches && matches.length === 3) {
+        mimeType = matches[1]
+        base64Data = matches[2]
+      }
+
+      // 2. Construct Gemini API call
+      const GEMINI_API_KEY = process.env.GEMINI_API_KEY
+      if (!GEMINI_API_KEY) {
+        return NextResponse.json(
+          { error: 'Gemini API key is not configured' },
+          { status: 500 }
+        )
+      }
+
+      const promptText = `
 You are a state-of-the-art plant pathology expert AI.
 Analyze the uploaded image of a plant leaf and determine if there is a disease.
 Provide your response in a strict JSON format matching the schema below.
@@ -66,50 +88,51 @@ JSON Schema fields:
 Return ONLY the JSON structure. Do not include markdown code block syntax (like \`\`\`json).
 `
 
-    const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`
-    
-    const geminiRes = await fetch(geminiUrl, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        contents: [
-          {
-            parts: [
-              {
-                text: promptText,
-              },
-              {
-                inlineData: {
-                  mimeType: mimeType,
-                  data: base64Data
+      const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`
+      
+      const geminiRes = await fetch(geminiUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          contents: [
+            {
+              parts: [
+                {
+                  text: promptText,
+                },
+                {
+                  inlineData: {
+                    mimeType: mimeType,
+                    data: base64Data
+                  }
                 }
-              }
-            ],
-          },
-        ],
-        generationConfig: {
-          responseMimeType: 'application/json'
-        }
-      }),
-    })
+              ],
+            },
+          ],
+          generationConfig: {
+            responseMimeType: 'application/json'
+          }
+        }),
+      })
 
-    const geminiData = await geminiRes.json()
+      const geminiData = await geminiRes.json()
 
-    if (!geminiRes.ok) {
-      console.error('Gemini API Error details:', geminiData)
-      throw new Error(geminiData.error?.message || 'Gemini API call failed')
+      if (!geminiRes.ok) {
+        console.error('Gemini API Error details:', geminiData)
+        throw new Error(geminiData.error?.message || 'Gemini API call failed')
+      }
+
+      // Parse response JSON
+      const responseText = geminiData.candidates?.[0]?.content?.parts?.[0]?.text || '{}'
+      const diagnosis = JSON.parse(responseText.trim())
+
+      return NextResponse.json({
+        diagnosis,
+        message: 'Image disease classification complete'
+      })
     }
-
-    // 5. Parse response JSON
-    const responseText = geminiData.candidates?.[0]?.content?.parts?.[0]?.text || '{}'
-    const diagnosis = JSON.parse(responseText.trim())
-
-    return NextResponse.json({
-      diagnosis,
-      message: 'Image disease classification complete'
-    })
 
   } catch (error) {
     console.error('Disease Detection API Error:', error)

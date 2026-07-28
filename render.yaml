@@ -1,0 +1,42 @@
+services:
+  # 1. Chat Microservice (Port 5001)
+  - type: web
+    name: agri-chat-service
+    env: node
+    plan: starter
+    buildCommand: npm install
+    startCommand: npm start
+    rootDir: microservices/chat-service
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: PORT
+        value: 5001
+
+  # 2. Weather Microservice (Port 5002)
+  - type: web
+    name: agri-weather-service
+    env: node
+    plan: starter
+    buildCommand: npm install
+    startCommand: npm start
+    rootDir: microservices/weather-service
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: PORT
+        value: 5002
+
+  # 3. Disease Microservice (Port 5003)
+  - type: web
+    name: agri-disease-service
+    env: node
+    plan: starter
+    buildCommand: npm install
+    startCommand: npm start
+    rootDir: microservices/disease-service
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: PORT
+        value: 5003

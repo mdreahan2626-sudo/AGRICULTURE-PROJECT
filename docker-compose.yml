@@ -1,0 +1,91 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3002:3000"
+    environment:
+      - DATABASE_URL=${DATABASE_URL}
+      - DIRECT_URL=${DIRECT_URL}
+      - JWT_SECRET=${JWT_SECRET}
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - CHAT_SERVICE_URL=http://load-balancer:5001
+      - WEATHER_SERVICE_URL=http://load-balancer:5002
+      - DISEASE_SERVICE_URL=http://load-balancer:5003
+    depends_on:
+      - load-balancer
+    restart: always
+
+  chat-service1:
+    build:
+      context: ./microservices/chat-service
+      dockerfile: Dockerfile
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - PORT=5001
+    restart: always
+
+  chat-service2:
+    build:
+      context: ./microservices/chat-service
+      dockerfile: Dockerfile
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - PORT=5001
+    restart: always
+
+  weather-service1:
+    build:
+      context: ./microservices/weather-service
+      dockerfile: Dockerfile
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - PORT=5002
+    restart: always
+
+  weather-service2:
+    build:
+      context: ./microservices/weather-service
+      dockerfile: Dockerfile
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - PORT=5002
+    restart: always
+
+  disease-service1:
+    build:
+      context: ./microservices/disease-service
+      dockerfile: Dockerfile
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - PORT=5003
+    restart: always
+
+  disease-service2:
+    build:
+      context: ./microservices/disease-service
+      dockerfile: Dockerfile
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - PORT=5003
+    restart: always
+
+  load-balancer:
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    ports:
+      - "5001:5001"
+      - "5002:5002"
+      - "5003:5003"
+    depends_on:
+      - chat-service1
+      - chat-service2
+      - weather-service1
+      - weather-service2
+      - disease-service1
+      - disease-service2
+    restart: always

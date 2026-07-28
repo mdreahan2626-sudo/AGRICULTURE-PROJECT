@@ -1,5 +1,7 @@
 import { NextResponse } from 'next/server'
 import { verifyToken } from '@/lib/auth'
+import { HumanMessage, AIMessage } from '@langchain/core/messages'
+import { app as agent } from '../../../../microservices/chat-service/agent.js'
 
 export async function POST(req) {
   try {
@@ -31,68 +33,47 @@ export async function POST(req) {
       )
     }
 
-    // 3. Format messages history for Gemini API
-    // Gemini roles: 'user' and 'model'
-    const formattedContents = messages.map(msg => ({
-      role: msg.role === 'assistant' ? 'model' : 'user',
-      parts: [
-        {
-          text: msg.content
-        }
-      ]
-    }))
-
-    const systemPrompt = `
-You are "AgroBot", a friendly, expert AI agricultural consultant.
-Your purpose is to answer the farmer's queries about soil, crop health, planting times, crop diseases, organic/chemical treatments, and weather effects.
-Speak in a highly supportive, clear, and concise manner.
-
-Language Guidelines:
-- You support: English, Hindi (हिंदी), Bengali (বাংলা), Marathi (मराठी), Tamil (தமிழ்), and Telugu (తెలుగు).
-- Always respond in the language that the farmer writes or speaks in.
-- Keep your answers brief, readable, and easy to follow (maximum 100 words). Use bullet points if necessary.
-`
-
-    // 4. Query Gemini API
-    const GEMINI_API_KEY = process.env.GEMINI_API_KEY
-    if (!GEMINI_API_KEY) {
-      return NextResponse.json(
-        { error: 'Gemini API key is not configured' },
-        { status: 500 }
-      )
-    }
-
-    const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`
+    // 3. Query Chat Microservice if URL is provided, otherwise fall back to Serverless execution
+    const CHAT_SERVICE_URL = process.env.CHAT_SERVICE_URL
     
-    const geminiRes = await fetch(geminiUrl, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        contents: formattedContents,
-        systemInstruction: {
-          parts: [
-            {
-              text: systemPrompt
-            }
-          ]
+    if (CHAT_SERVICE_URL) {
+      const serviceRes = await fetch(`${CHAT_SERVICE_URL}/api/chat`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ messages }),
+      })
+
+      const serviceData = await serviceRes.json()
+
+      if (!serviceRes.ok) {
+        console.error('Microservice Chat Error details:', serviceData)
+        throw new Error(serviceData.error || 'Microservice call failed')
+      }
+
+      return NextResponse.json({
+        message: serviceData.message,
+      })
+    } else {
+      // Serverless execution: invoke LangGraph agent directly
+      const langchainMessages = messages.map(msg => {
+        if (msg.role === 'assistant') {
+          return new AIMessage({ content: msg.content })
+        } else {
+          return new HumanMessage({ content: msg.content })
         }
-      }),
-    })
+      })
 
-    const geminiData = await geminiRes.json()
+      const response = await agent.invoke({
+        messages: langchainMessages,
+      })
 
-    if (!geminiRes.ok) {
-      console.error('Gemini API Error details:', geminiData)
-      throw new Error(geminiData.error?.message || 'Gemini API call failed')
+      const lastMessage = response.messages[response.messages.length - 1]
+      return NextResponse.json({
+        message: lastMessage.content,
+      })
     }
-
-    const responseText = geminiData.candidates?.[0]?.content?.parts?.[0]?.text || ''
-
-    return NextResponse.json({
-      message: responseText.trim(),
-    })
 
   } catch (error) {
     console.error('Chat API Error:', error)
